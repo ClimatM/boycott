@@ -1,0 +1,82 @@
+:root {
+    --color-action: #cc213a;
+    --color-bg-action: rgba(255, 0, 0, 0.1);
+    --color-bg-dark: #181818;
+    --color-alt: rgb(168, 124, 17);
+    --color-bg-dark-highlight: #343434;
+    --font-text: "Public Sans", sans-serif;
+    --font-sans: "Bebas Neue", cursive;
+    --color-links: white;
+    --radius: 10px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Public+Sans:wght@100;400;800&display=swap');
+
+html, body {
+    background: var(--color-bg-dark);
+    margin: 0;
+    color: #eee;
+    font-family: var(--font-text);
+    font-size: 18px;
+    text-rendering: optimizeLegibility;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family: var(--font-sans);
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: 1.6rem;
+    margin-top: 0;
+}
+
+li {
+    line-height: 1.4;
+}
+
+a {
+    color: var(--color-links)
+}
+
+sup {
+    font-size: .8rem;
+}
+
+strong {
+    color: var(--color-action);
+}
+
+img {
+    display: block;
+}
+
+button, .button {
+    flex: 1 1 auto;
+    font-size: 1.3rem;
+    padding: .5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    border: 0;
+    background: var(--color-alt);
+    cursor: pointer;
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+    text-decoration: none;
+
+    &:disabled {
+        opacity: .2;
+        pointer-events: none;
+    }
+}
+
+@import 'default';
+@import 'desktop';
+@import 'modal';
+

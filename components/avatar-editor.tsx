@@ -6,7 +6,7 @@ import { dataURLtoBlob, addBannerToCanvas } from '../utils';
 const linkedinProfileSize = 300;
 const textSize = 24;
 const bannerHeight = 40;
-const textPadding = 14;
+const textPadding = 11;
 
 export default function AvatarEditor(props) {
     let avatarLinkedin = useRef(null);

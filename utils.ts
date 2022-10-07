@@ -37,7 +37,7 @@ export function getBackgroundPathFromSize(size, bannerHeight) {
             },
             colorStops:[
                 { offset: 0, color: '#222'},
-                { offset: .25, color: '#444'},
+                { offset: .35, color: '#444'},
                 { offset: .5, color: 'transparent' }
             ]
         }),
@@ -49,8 +49,9 @@ export function getBackgroundPathFromSize(size, bannerHeight) {
 export function addBannerToCanvas(canvas, size, textSize, textPadding, bannerHeight) {
     const path = getCirclePathFromSize(size, textPadding);
     const backgroundPath = getBackgroundPathFromSize(size, bannerHeight);
-    const text = new fabric.Text(constants.hashtag, {
+    const text = new fabric.Text(constants.hashtag.toUpperCase(), {
         fontSize: textSize,
+        fontWeight: 600,
         path,
         fill: 'white',
         top: path.top,
@@ -73,7 +74,7 @@ export function addBannerToCanvas(canvas, size, textSize, textPadding, bannerHei
     groupText.selectable = false;
 
     groupBackground.center();
-    groupBackground.rotate(40);
+    groupBackground.rotate(30);
     groupBackground.selectable = false;
 
     canvas.add(groupText);

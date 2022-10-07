@@ -162,11 +162,7 @@ export default function EngageForm() {
             }
 
             <div className="counter">
-                {counterValue > 100 &&
-                    <>
-                        <span className="counter-value">{counterValue}</span> se sont déjà engagées à boycotter.
-                    </>
-                }
+                <span className="counter-value">{counterValue}</span>personnes s’engagent déjà à boycotter.
             </div>
         </div>
     )

@@ -52,6 +52,7 @@ export function addBannerToCanvas(canvas, size, textSize, textPadding, bannerHei
     const text = new fabric.Text(constants.hashtag.toUpperCase(), {
         fontSize: textSize,
         fontWeight: 600,
+        charSpacing: 50,
         path,
         fill: 'white',
         top: path.top,
@@ -74,7 +75,7 @@ export function addBannerToCanvas(canvas, size, textSize, textPadding, bannerHei
     groupText.selectable = false;
 
     groupBackground.center();
-    groupBackground.rotate(30);
+    groupBackground.rotate(25);
     groupBackground.selectable = false;
 
     canvas.add(groupText);

@@ -3,9 +3,10 @@ import { getMongoDb } from '../../server/mongodb';
 
 export default async function handler(req, res) {
     const body = req.body;
+    const reEmail = /\S+@\S+\.\S+/;
 
-    if (!body.email) {
-        return res.status(400).json({ data: 'First or last name not found' })
+    if (!body.email || !reEmail.test(body.email)) {
+        return res.status(400).json({ error: 'wrong_email' })
     }
 
     const hash = crypto.createHash('sha256').update(body.email).digest('hex');
@@ -16,7 +17,7 @@ export default async function handler(req, res) {
     });
 
     if (hashAlreadySaved) {
-        return res.status(400).json({ error: 'email already exists' })
+        return res.status(400).json({ error: 'email_exists' })
     } else {
         await collection.insertOne({
             hash

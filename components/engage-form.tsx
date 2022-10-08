@@ -72,7 +72,7 @@ export default function EngageForm() {
     const [emailValue, setEmailValue] = useState('');
     const [hasPassedRecaptcha, setHasPassedRecaptcha] = useState(false);
     const [hasCounted, setHasCounted] = useState(false);
-    const [error, setError] = useState(false);
+    const [error, setError] = useState('');
     // @ts-ignore
     const { handleModal } = React.useContext(ModalContext);
 
@@ -102,10 +102,18 @@ export default function EngageForm() {
 
             if (result.success) {
                 setCounterValue(result.total);
-            }
+                setHasCounted(true);
+                window.localStorage.setItem(storageKey, 'true');
+            } else {
+                if (result.error === 'wrong_email') {
+                    setError('Email non valide');
+                }
 
-            setHasCounted(true);
-            window.localStorage.setItem(storageKey, 'true');
+                if (result.error === 'email_exists') {
+                    setHasCounted(true);
+                    window.localStorage.setItem(storageKey, 'true');
+                }
+            }
         }
     }
 
@@ -135,6 +143,11 @@ export default function EngageForm() {
                         />
                     </div>
 
+                    {error && error.length > 0 &&
+                        <p className="error">
+                            {error}
+                        </p>
+                    }
                     <button
                         type="submit"
                         disabled={!hasPassedRecaptcha}

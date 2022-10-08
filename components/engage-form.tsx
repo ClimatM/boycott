@@ -113,7 +113,7 @@ export default function EngageForm() {
         <div className="engage-container">
             {!hasCounted ?
             <div className="vote-container">
-                <form className="vote-form">
+                <form className="vote-form" onSubmit={handleEngageOne}>
                     <label htmlFor="email">
                         Je rejoins le boycott&nbsp;:
                     </label>
@@ -136,8 +136,7 @@ export default function EngageForm() {
                     </div>
 
                     <button
-                        type="button"
-                        onClick={handleEngageOne}
+                        type="submit"
                         disabled={!hasPassedRecaptcha}
                     >
                         Je m&apos;engage

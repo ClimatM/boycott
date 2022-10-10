@@ -1,0 +1,82 @@
+
+.avatar-tool {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    margin-top: 5rem;
+
+    .disclaimer-privacy {
+        padding: 0 2rem;
+    }
+}
+
+.uploader {
+    height: 33vh;
+    background: var(--color-bg-highlight);
+    display: flex;
+    padding: 2rem;
+    position: relative;
+    z-index: 1;
+
+    .upload-button {
+        flex: 1 1 auto;
+        padding: .5rem 1rem;
+        border: 5px dashed #444;
+        color: white;
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 10px;
+        cursor: pointer;
+    }
+}
+
+.avatar-renders {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+.avatar-renders canvas {
+    width: 120px;
+    height: 120px;
+    pointer-events: none;
+}
+
+.controls {
+    list-style: none;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+
+    li {
+        margin-bottom: 1rem;
+    }
+
+    button {
+        border: 1px solid #888;
+        border-radius: 5px;
+        padding: .25rem .75rem;
+        background: #444;
+        color: #ddd;
+        cursor: pointer;
+    }
+
+    .button-secondary {
+        border: 0;
+        background: transparent;
+        padding: 0;
+        font-size: .8rem;
+        color: #aaa;
+    }
+}
+
+@media only screen and (min-width: 812px) {
+
+    .avatar-tool {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+}

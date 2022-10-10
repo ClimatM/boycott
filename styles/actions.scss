@@ -1,0 +1,62 @@
+
+.block-action {
+    position: relative;
+    margin-bottom: 6rem;
+
+    .action-order {
+        display: block;
+        text-align: center;
+        font-size: 8rem;
+        font-family: var(--font-sans);
+        color: #555;
+        z-index: 0;
+        line-height: 1;
+    }
+
+    h2, h3 {
+        position: relative;
+        z-index: 1;
+        padding: 0 2rem;
+        text-align: center;
+    }
+
+    .action-explain {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 812px) {
+
+    .actions-list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .block-action {
+        grid-column: span 3;
+        text-align: center;
+        font-size: 1.4rem;
+
+        .action-order {
+            position: absolute;
+            left: 2rem;
+            top: -2rem;
+            font-size: 15rem;
+        }
+
+        h2 {
+            font-size: 3rem;
+            margin-bottom: 0;
+        }
+    }
+
+    .action-second {
+        grid-column: 2 / 5;
+    }
+}

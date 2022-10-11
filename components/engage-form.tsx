@@ -132,7 +132,7 @@ export default function EngageForm() {
                         required
                         value={emailValue}
                         onChange={e => setEmailValue(e.target.value)}
-                        placeholder="monemail@domain.com"
+                        placeholder="monemail@domaine.com"
                     />
 
                     <div className="recaptcha-container">

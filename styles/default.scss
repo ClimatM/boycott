@@ -32,34 +32,6 @@
     }
 }
 
-.stripes {
-    transform: translateZ(8px) scale(.75);
-
-    &::before {
-        content: ' ';
-        position: absolute;
-        left: -80vw;
-        top: 15vh;
-        height: 30vh;
-        width: 300%;
-        background: var(--color-bg-action);
-        transform: rotate(-30deg);
-        z-index: 0;
-    }
-
-    &::after {
-        content: ' ';
-        position: absolute;
-        left: -80vw;
-        top: 35vh;
-        height: 30vh;
-        width: 300%;
-        background: var(--color-bg-action);
-        transform: rotate(-30deg) translateZ(2px) scale(.75);
-        z-index: 0;
-    }
-}
-
 .header-title {
     font-size: 4rem;
     line-height: 1;

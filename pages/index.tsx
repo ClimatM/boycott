@@ -120,9 +120,9 @@ export default function Index() {
                     </h2>
                 </div>
 
-                <div className="stripes"></div>
+                <div className="engage-background"></div>
                 <div className="actions-list">
-                    <div className="block-action action-first" id="engage">
+                    <div className="block-action action-first engage-action" id="engage">
                         <span className="action-order">
                             1
                         </span>
@@ -133,7 +133,7 @@ export default function Index() {
                             <p>
                                 Au-delà du symbole, <strong>ne pas regarder les matchs</strong> fera baisser les parts
                                 d’audience de TF1 et de la chaîne qatari BeIN, poussant les organisateurs
-                                et les diffuseurs à changer leurs pratiques pour les prochaines éditions..
+                                et les diffuseurs à changer leurs pratiques pour les prochaines éditions.
                             </p>
                         </div>
 

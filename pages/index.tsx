@@ -4,6 +4,7 @@ import Head from 'next/head';
 import AvatarEditor from '../components/avatar-editor';
 import Uploader from '../components/uploader';
 import EngageForm from '../components/engage-form';
+import Map from '../components/map';
 
 import { ModalProvider } from '../components/modal';
 import constants from '../constants';
@@ -138,7 +139,9 @@ export default function Index() {
                         </div>
 
                         <EngageForm/>
+                    </div>
 
+                    <div className="personalities-container">
                         <h3>
                             Ces personnalités qui ont déjà appelé au boycott
                         </h3>
@@ -159,16 +162,19 @@ export default function Index() {
                             ].map(personality => (
                                 <li key={personality.name}>
                                     <a href={personality.link} rel="external">
-                                        <span className="personality-name">
-                                            {personality.name}
-                                        </span>
+                                            <span className="personality-name">
+                                                {personality.name}
+                                            </span>
                                         <span className="personality-position">
-                                            {personality.position}
-                                        </span>
+                                                {personality.position}
+                                            </span>
                                     </a>
                                 </li>
                             ))}
                         </ul>
+                        <figure className="map">
+                            <Map />
+                        </figure>
                     </div>
 
                     <div className="block-action action-second" id="profile">

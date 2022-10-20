@@ -1,5 +1,5 @@
 const cities = [
-    <g id="city-tag">
+    <g id="city-tag" key="REIMS">
         <line id="Line 28" x1="320.5" y1="82" x2="320.5" y2="125" stroke="#434242"/>
         <rect id="Rectangle 12" x="320" y="82" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13" d="M320 104.446L320 110L325.763 110L348 88.2688L348 82L342.969 82L320 104.446Z" fill="#501212"/>
@@ -8,7 +8,7 @@ const cities = [
             <text id="Marseille" fill="black"><tspan x="353" y="99.6">REIMS</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_2">
+    <g id="city-tag_2" key="Marseille">
         <line id="Line 28_2" x1="398.5" y1="415" x2="398.5" y2="458" stroke="#434242"/>
         <rect id="Rectangle 12_2" x="398" y="415" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_2" d="M398 437.446L398 443L403.763 443L426 421.269L426 415L420.969 415L398 437.446Z" fill="#501212"/>
@@ -17,7 +17,7 @@ const cities = [
             <text id="Marseille_2" fill="black" ><tspan x="431" y="432.6">Marseille</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_3">
+    <g id="city-tag_3" key="Bordeaux">
         <line id="Line 28_3" x1="150.5" y1="321" x2="150.5" y2="364" stroke="#434242"/>
         <rect id="Rectangle 12_3" x="150" y="321" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_3" d="M150 343.446L150 349L155.763 349L178 327.269L178 321L172.969 321L150 343.446Z" fill="#501212"/>
@@ -26,7 +26,7 @@ const cities = [
             <text id="Marseille_3" fill="black" ><tspan x="183" y="338.6">Bordeaux</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_4">
+    <g id="city-tag_4" key="LIMOGES">
         <line id="Line 28_4" x1="222.5" y1="270" x2="222.5" y2="313" stroke="#434242"/>
         <rect id="Rectangle 12_4" x="222" y="270" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_4" d="M222 292.446L222 298L227.763 298L250 276.269L250 270L244.969 270L222 292.446Z" fill="#501212"/>
@@ -35,7 +35,7 @@ const cities = [
             <text id="Marseille_4" fill="black" ><tspan x="255" y="287.6">LIMOGES</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_5">
+    <g id="city-tag_5" key="POITIER">
         <line id="Line 28_5" x1="204.5" y1="217" x2="204.5" y2="260" stroke="#434242"/>
         <rect id="Rectangle 12_5" x="204" y="217" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_5" d="M204 239.446L204 245L209.763 245L232 223.269L232 217L226.969 217L204 239.446Z" fill="#501212"/>
@@ -44,7 +44,7 @@ const cities = [
             <text id="Marseille_5" fill="black" ><tspan x="237" y="234.6">POITIER</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_6">
+    <g id="city-tag_6" key="ANNECY">
         <line id="Line 28_6" x1="421.5" y1="263" x2="421.5" y2="306" stroke="#434242"/>
         <rect id="Rectangle 12_6" x="421" y="263" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_6" d="M421 285.446L421 291L426.763 291L449 269.269L449 263L443.969 263L421 285.446Z" fill="#501212"/>
@@ -53,7 +53,7 @@ const cities = [
             <text id="Marseille_6" fill="black" ><tspan x="454" y="280.6">ANNECY</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_9">
+    <g id="city-tag_9" key="GRENOBLE">
         <line id="Line 28_9" x1="417.5" y1="284" x2="417.5" y2="327" stroke="#434242"/>
         <rect id="Rectangle 12_9" x="417" y="284" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_9" d="M417 306.446L417 312L422.763 312L445 290.269L445 284L439.969 284L417 306.446Z" fill="#501212"/>
@@ -62,7 +62,7 @@ const cities = [
             <text id="Marseille_7" fill="black" ><tspan x="450" y="301.6">GRENOBLE</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_10">
+    <g id="city-tag_10" key="BAYONNE">
         <line id="Line 28_10" x1="108.5" y1="407" x2="108.5" y2="450" stroke="#434242"/>
         <rect id="Rectangle 12_10" x="108" y="407" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_10" d="M108 429.446L108 435L113.763 435L136 413.269L136 407L130.969 407L108 429.446Z" fill="#501212"/>
@@ -71,7 +71,7 @@ const cities = [
             <text id="Marseille_8" fill="black" ><tspan x="141" y="424.6">BAYONNE</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_11">
+    <g id="city-tag_11" key="BREST">
         <line id="Line 28_11" x1="23.5" y1="111" x2="23.5" y2="154" stroke="#434242"/>
         <rect id="Rectangle 12_11" x="23" y="111" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_11" d="M23 133.446L23 139L28.7626 139L51 117.269L51 111L45.9686 111L23 133.446Z" fill="#501212"/>
@@ -80,7 +80,7 @@ const cities = [
             <text id="Marseille_9" fill="black" ><tspan x="56" y="128.6">BREST</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_12">
+    <g id="city-tag_12" key="PARIS">
         <line id="Line 28_12" x1="257.5" y1="104" x2="257.5" y2="147" stroke="#434242"/>
         <rect id="Rectangle 12_12" x="257" y="104" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_12" d="M257 126.446L257 132L262.763 132L285 110.269L285 104L279.969 104L257 126.446Z" fill="#501212"/>
@@ -89,7 +89,7 @@ const cities = [
             <text id="Marseille_10" fill="black" ><tspan x="290" y="121.6">PARIS</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_13">
+    <g id="city-tag_13" key="RENNES">
         <line id="Line 28_13" x1="136.5" y1="147" x2="136.5" y2="190" stroke="#434242"/>
         <rect id="Rectangle 12_13" x="136" y="147" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_13" d="M136 169.446L136 175L141.763 175L164 153.269L164 147L158.969 147L136 169.446Z" fill="#501212"/>
@@ -98,7 +98,7 @@ const cities = [
             <text id="Marseille_11" fill="black" ><tspan x="169" y="164.6">RENNES</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_14">
+    <g id="city-tag_14" key="LILLE">
         <line id="Line 28_14" x1="287.5" x2="287.5" y2="43" stroke="#434242"/>
         <rect id="Rectangle 12_14" x="287" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_14" d="M287 22.4458L287 28L292.763 28L315 6.26882L315 6.39233e-07L309.969 -1.71647e-07L287 22.4458Z" fill="#501212"/>
@@ -107,7 +107,7 @@ const cities = [
             <text id="Marseille_12" fill="black" ><tspan x="320" y="17.6">LILLE</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_15">
+    <g id="city-tag_15" key="Strasbourg">
         <line id="Line 28_15" x1="479.5" y1="98" x2="479.5" y2="141" stroke="#434242"/>
         <rect id="Rectangle 12_15" x="479" y="98" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_15" d="M479 120.446L479 126L484.763 126L507 104.269L507 98L501.969 98L479 120.446Z" fill="#501212"/>
@@ -116,7 +116,7 @@ const cities = [
             <text id="Marseille_13" fill="black" ><tspan x="512" y="115.6">Strasbourg</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_16">
+    <g id="city-tag_16" key="NANCY">
         <line id="Line 28_16" x1="432.5" y1="110" x2="432.5" y2="153" stroke="#434242"/>
         <rect id="Rectangle 12_16" x="432" y="110" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_16" d="M432 132.446L432 138L437.763 138L460 116.269L460 110L454.969 110L432 132.446Z" fill="#501212"/>
@@ -125,7 +125,7 @@ const cities = [
             <text id="Marseille_14" fill="black" ><tspan x="465" y="127.6">NANCY</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_18">
+    <g id="city-tag_18" key="BELFORT">
         <line id="Line 28_18" x1="443.5" y1="167" x2="443.5" y2="210" stroke="#434242"/>
         <rect id="Rectangle 12_18" x="443" y="167" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_18" d="M443 189.446L443 195L448.763 195L471 173.269L471 167L465.969 167L443 189.446Z" fill="#501212"/>
@@ -134,7 +134,7 @@ const cities = [
             <text id="Marseille_16" fill="black" ><tspan x="476" y="184.6">BELFORT</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_17">
+    <g id="city-tag_17" key="MONTBELIARD">
         <line id="Line 28_17" x1="437.5" y1="175" x2="437.5" y2="218" stroke="#434242"/>
         <rect id="Rectangle 12_17" x="437" y="175" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_17" d="M437 197.446L437 203L442.763 203L465 181.269L465 175L459.969 175L437 197.446Z" fill="#501212"/>
@@ -143,7 +143,7 @@ const cities = [
             <text id="Marseille_15" fill="black" ><tspan x="470" y="192.6">MONTBELIARD</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_19">
+    <g id="city-tag_19" key="BESANCON">
         <line id="Line 28_19" x1="391.5" y1="190" x2="391.5" y2="233" stroke="#434242"/>
         <rect id="Rectangle 12_19" x="391" y="190" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_19" d="M391 212.446L391 218L396.763 218L419 196.269L419 190L413.969 190L391 212.446Z" fill="#501212"/>
@@ -152,7 +152,7 @@ const cities = [
             <text id="Marseille_17" fill="black" ><tspan x="424" y="207.6">BESANCON</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_21">
+    <g id="city-tag_21" key="RODEZ">
         <line id="Line 28_21" x1="273.5" y1="349" x2="273.5" y2="392" stroke="#434242"/>
         <rect id="Rectangle 12_21" x="273" y="349" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_21" d="M273 371.446L273 377L278.763 377L301 355.269L301 349L295.969 349L273 371.446Z" fill="#501212"/>
@@ -161,7 +161,7 @@ const cities = [
             <text id="Marseille_19" fill="black" ><tspan x="306" y="366.6">RODEZ</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_7">
+    <g id="city-tag_7" key="LYON">
         <line id="Line 28_7" x1="376.5" y1="270" x2="376.5" y2="313" stroke="#434242"/>
         <rect id="Rectangle 12_7" x="376" y="270" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_7" d="M376 292.446L376 298L381.763 298L404 276.269L404 270L398.969 270L376 292.446Z" fill="#501212"/>
@@ -170,7 +170,7 @@ const cities = [
             <text id="LYON" fill="black" ><tspan x="409" y="287.6">LYON</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_8">
+    <g id="city-tag_8" key="SAINT-ETIENNE">
         <line id="Line 28_8" x1="368.5" y1="279" x2="368.5" y2="322" stroke="#434242"/>
         <rect id="Rectangle 12_8" x="368" y="279" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_8" d="M368 301.446L368 307L373.763 307L396 285.269L396 279L390.969 279L368 301.446Z" fill="#501212"/>
@@ -179,7 +179,7 @@ const cities = [
             <text id="LYON_2" fill="black" ><tspan x="401" y="296.6">SAINT-ETIENNE</tspan></text>
         </g>
     </g>,
-    <g id="city-tag_20">
+    <g id="city-tag_20" key="Clermont-ferrand">
         <line id="Line 28_20" x1="293.5" y1="270" x2="293.5" y2="313" stroke="#434242"/>
         <rect id="Rectangle 12_20" x="293" y="270" width="28" height="28" fill="#312E2E"/>
         <path id="Rectangle 13_20" d="M293 292.446L293 298L298.763 298L321 276.269L321 270L315.969 270L293 292.446Z" fill="#501212"/>

@@ -1,0 +1,64 @@
+
+.map-container {
+    .map {
+        width: calc(100vw - 4rem);
+        margin: 0;
+        padding: 2rem;
+        overflow-y: auto;
+    }
+
+    svg {
+        height: 90vh;
+    }
+
+    .flag {
+        transition: all .2s ease-in-out;
+
+        & > g > g {
+            display: none;
+        }
+
+        tspan {
+            font-family: var(--font-sans);
+            font-size: 12px;
+        }
+    }
+
+    .flag:hover {
+        & > g > g {
+            display: block;
+        }
+        //animation: bounce 2s ease infinite;
+    }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+    40% {transform: translateY(-10px);}
+    60% {transform: translateY(-5px);}
+}
+
+@media only screen and (min-width: 812px) {
+    .map-container {
+        .map {
+            width: auto;
+            max-width: 90%;
+            margin: 0;
+            padding: 2rem;
+            text-align: right;
+
+            svg {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    .map-container {
+        svg {
+            height: 100vh;
+        }
+    }
+}

@@ -75,10 +75,8 @@ const cities = [
                       d="M204 239.446L204 245L209.763 245L232 223.269L232 217L226.969 217L204 239.446Z"
                       fill="#501212"/>
                 <g id="Frame 1_5">
-                    <rect width="38" height="28" transform="translate(232 217)" fill="#BEBEBE"/>
-                    <text id="Marseille_5" fill="black">
-                        <tspan x="237" y="234.6">POITIERS</tspan>
-                    </text>
+                    <rect width="43" height="28" transform="translate(232 217)" fill="#BEBEBE"/>
+                    <text id="Marseille_5" fill="black"><tspan x="237" y="234.6">POITIERS</tspan></text>
                 </g>
             </g>
         )
